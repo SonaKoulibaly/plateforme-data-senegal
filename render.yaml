@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: plateforme-data-senegal
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:server --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: banque_senegal
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"

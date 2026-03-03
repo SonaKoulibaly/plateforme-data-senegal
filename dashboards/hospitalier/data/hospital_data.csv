@@ -1,0 +1,501 @@
+PatientID;Age;Sexe;Departement;Maladie;DureeSejour;Cout;DateAdmission;DateSortie;Traitement
+1;82;M;Cardiologie;Cancer;5;2125;03/09/2025;08/09/2025;Chirurgie
+2;18;M;Oncologie;Cancer;15;8685;16/01/2025;31/01/2025;Médication
+3;76;F;Cardiologie;Infarctus;2;822;17/05/2025;19/05/2025;Chirurgie
+4;65;M;Neurologie;Fracture;12;7584;08/06/2025;20/06/2025;Physiothérapie
+5;70;F;Orthopédie;Alzheimer;10;4420;01/10/2025;11/10/2025;Médication
+6;21;F;Pneumologie;Pneumonie;3;1230;14/05/2025;17/05/2025;Antibiotiques
+7;14;M;Gériatrie;Infarctus;6;2856;20/12/2024;26/12/2024;Radiothérapie
+8;34;M;Oncologie;Alzheimer;9;3267;23/03/2025;01/04/2025;Soins spéciaux
+9;11;F;Dermatologie;Cancer;10;4850;15/07/2025;25/07/2025;Radiothérapie
+10;25;M;Cardiologie;Cancer;4;2780;08/12/2025;12/12/2025;Antibiotiques
+11;11;M;Dermatologie;Infarctus;7;3094;24/09/2025;01/10/2025;Soins spéciaux
+12;82;F;Orthopédie;Pneumonie;6;2442;01/05/2025;07/05/2025;Physiothérapie
+13;35;M;Neurologie;Cancer;3;1719;13/09/2025;16/09/2025;Physiothérapie
+14;32;M;Gériatrie;Alzheimer;5;3135;09/11/2025;14/11/2025;Physiothérapie
+15;72;M;Oncologie;Pneumonie;14;9702;10/11/2025;24/11/2025;Médication
+16;30;M;Dermatologie;Pneumonie;7;3059;08/01/2025;15/01/2025;Médication
+17;28;F;Orthopédie;Cancer;8;4016;09/07/2025;17/07/2025;Physiothérapie
+18;59;M;Pneumologie;Fracture;4;2724;06/05/2025;10/05/2025;Radiothérapie
+19;69;F;Oncologie;Hypertension;7;4186;29/05/2025;05/06/2025;Soins spéciaux
+20;47;M;Orthopédie;Hypertension;8;2768;25/06/2025;03/07/2025;Médication
+21;15;M;Oncologie;Fracture;13;8424;05/02/2025;18/02/2025;Soins spéciaux
+22;77;M;Gériatrie;Alzheimer;10;5390;30/06/2025;10/07/2025;Radiothérapie
+23;33;M;Oncologie;Cancer;2;1298;29/05/2025;31/05/2025;Radiothérapie
+24;35;F;Cardiologie;Pneumonie;7;2660;30/08/2025;06/09/2025;Soins spéciaux
+25;1;F;Neurologie;Eczéma;3;1677;28/04/2025;01/05/2025;Médication
+26;81;F;Dermatologie;Cancer;9;5499;04/04/2025;13/04/2025;Chirurgie
+27;20;F;Dermatologie;Fracture;9;6282;07/05/2025;16/05/2025;Radiothérapie
+28;1;F;Gériatrie;Infarctus;2;970;18/02/2025;20/02/2025;Antibiotiques
+29;31;M;Orthopédie;Hypertension;2;686;05/11/2025;07/11/2025;Physiothérapie
+30;63;M;Dermatologie;Hypertension;13;4732;15/08/2025;28/08/2025;Chirurgie
+31;85;F;Neurologie;Fracture;5;2850;07/01/2025;12/01/2025;Radiothérapie
+32;55;M;Neurologie;Eczéma;12;7836;11/12/2024;23/12/2024;Chirurgie
+33;40;F;Oncologie;Cancer;6;3144;12/01/2025;18/01/2025;Radiothérapie
+34;58;M;Orthopédie;Fracture;2;946;04/01/2025;06/01/2025;Médication
+35;76;M;Neurologie;Fracture;1;336;28/09/2025;29/09/2025;Physiothérapie
+36;81;M;Orthopédie;Infarctus;15;4740;25/05/2025;09/06/2025;Antibiotiques
+37;10;M;Pneumologie;Cancer;8;3272;02/10/2025;10/10/2025;Radiothérapie
+38;17;F;Orthopédie;Eczéma;8;4064;24/06/2025;02/07/2025;Chirurgie
+39;13;M;Oncologie;Alzheimer;6;3096;31/08/2025;06/09/2025;Soins spéciaux
+40;60;M;Oncologie;Cancer;11;3850;20/05/2025;31/05/2025;Médication
+41;52;F;Dermatologie;Eczéma;2;854;04/12/2025;06/12/2025;Chirurgie
+42;25;F;Orthopédie;Alzheimer;3;1326;23/06/2025;26/06/2025;Soins spéciaux
+43;32;M;Gériatrie;Eczéma;14;8134;24/10/2025;07/11/2025;Médication
+44;7;M;Cardiologie;Eczéma;14;5894;11/01/2025;25/01/2025;Chirurgie
+45;53;F;Gériatrie;Fracture;14;7070;13/01/2025;27/01/2025;Médication
+46;22;F;Cardiologie;Alzheimer;5;2660;06/03/2025;11/03/2025;Antibiotiques
+47;55;F;Orthopédie;Fracture;5;2055;24/05/2025;29/05/2025;Médication
+48;75;M;Oncologie;Pneumonie;1;325;30/04/2025;01/05/2025;Radiothérapie
+49;62;M;Cardiologie;Hypertension;2;790;06/11/2025;08/11/2025;Médication
+50;77;M;Oncologie;Eczéma;4;2024;15/11/2025;19/11/2025;Médication
+51;73;M;Neurologie;Hypertension;1;617;29/03/2025;30/03/2025;Médication
+52;54;F;Pneumologie;Fracture;11;7326;10/02/2025;21/02/2025;Antibiotiques
+53;31;F;Gériatrie;Fracture;11;6930;27/10/2025;07/11/2025;Antibiotiques
+54;59;F;Dermatologie;Infarctus;1;534;08/09/2025;09/09/2025;Radiothérapie
+55;73;M;Cardiologie;Hypertension;4;2236;06/05/2025;10/05/2025;Antibiotiques
+56;17;F;Cardiologie;Fracture;6;2670;25/10/2025;31/10/2025;Chirurgie
+57;57;F;Neurologie;Eczéma;11;6270;18/02/2025;01/03/2025;Médication
+58;86;F;Oncologie;Infarctus;15;5520;02/07/2025;17/07/2025;Antibiotiques
+59;15;M;Oncologie;Hypertension;3;1317;26/03/2025;29/03/2025;Antibiotiques
+60;78;M;Oncologie;Pneumonie;4;2604;24/05/2025;28/05/2025;Physiothérapie
+61;34;F;Pneumologie;Eczéma;1;347;28/04/2025;29/04/2025;Physiothérapie
+62;55;F;Cardiologie;Infarctus;6;4164;23/12/2024;29/12/2024;Chirurgie
+63;82;F;Orthopédie;Cancer;8;4656;17/09/2025;25/09/2025;Physiothérapie
+64;55;M;Cardiologie;Infarctus;15;9795;23/12/2024;07/01/2025;Chirurgie
+65;70;M;Dermatologie;Pneumonie;10;5820;05/03/2025;15/03/2025;Chirurgie
+66;56;M;Cardiologie;Pneumonie;6;1920;10/07/2025;16/07/2025;Antibiotiques
+67;27;M;Oncologie;Infarctus;6;4194;13/05/2025;19/05/2025;Radiothérapie
+68;53;M;Orthopédie;Eczéma;3;1170;30/08/2025;02/09/2025;Soins spéciaux
+69;4;M;Oncologie;Pneumonie;13;6630;23/04/2025;06/05/2025;Physiothérapie
+70;32;F;Orthopédie;Eczéma;12;4260;02/08/2025;14/08/2025;Soins spéciaux
+71;5;F;Orthopédie;Fracture;14;7490;20/08/2025;03/09/2025;Antibiotiques
+72;40;M;Orthopédie;Infarctus;11;4378;15/07/2025;26/07/2025;Soins spéciaux
+73;43;F;Dermatologie;Infarctus;13;5746;04/05/2025;17/05/2025;Antibiotiques
+74;83;F;Oncologie;Eczéma;9;4221;28/01/2025;06/02/2025;Médication
+75;15;F;Orthopédie;Hypertension;5;1595;04/02/2025;09/02/2025;Médication
+76;77;F;Pneumologie;Cancer;13;5980;24/04/2025;07/05/2025;Soins spéciaux
+77;78;M;Gériatrie;Hypertension;4;1720;29/10/2025;02/11/2025;Médication
+78;56;M;Neurologie;Eczéma;9;5859;26/10/2025;04/11/2025;Physiothérapie
+79;86;M;Pneumologie;Alzheimer;2;1280;19/11/2025;21/11/2025;Antibiotiques
+80;80;F;Oncologie;Eczéma;2;1336;13/09/2025;15/09/2025;Antibiotiques
+81;65;F;Oncologie;Alzheimer;6;3036;02/11/2025;08/11/2025;Physiothérapie
+82;38;M;Orthopédie;Alzheimer;11;5434;22/06/2025;03/07/2025;Physiothérapie
+83;23;F;Gériatrie;Hypertension;14;4200;09/12/2024;23/12/2024;Antibiotiques
+84;37;M;Gériatrie;Eczéma;10;6100;04/02/2025;14/02/2025;Physiothérapie
+85;42;F;Gériatrie;Alzheimer;11;4499;11/04/2025;22/04/2025;Radiothérapie
+86;61;M;Oncologie;Infarctus;5;2815;09/02/2025;14/02/2025;Physiothérapie
+87;82;F;Cardiologie;Eczéma;13;5460;10/02/2025;23/02/2025;Physiothérapie
+88;40;M;Dermatologie;Fracture;3;936;16/11/2025;19/11/2025;Médication
+89;32;F;Neurologie;Eczéma;13;4381;03/02/2025;16/02/2025;Soins spéciaux
+90;54;M;Oncologie;Cancer;7;3871;02/02/2025;09/02/2025;Soins spéciaux
+91;32;M;Oncologie;Cancer;1;684;16/06/2025;17/06/2025;Médication
+92;55;M;Orthopédie;Eczéma;12;6780;18/07/2025;30/07/2025;Soins spéciaux
+93;7;M;Dermatologie;Infarctus;8;2944;12/04/2025;20/04/2025;Soins spéciaux
+94;86;F;Dermatologie;Alzheimer;10;6680;24/10/2025;03/11/2025;Radiothérapie
+95;55;F;Orthopédie;Cancer;14;7602;18/01/2025;01/02/2025;Soins spéciaux
+96;34;M;Dermatologie;Cancer;5;3460;02/10/2025;07/10/2025;Radiothérapie
+97;63;M;Pneumologie;Alzheimer;2;1330;25/06/2025;27/06/2025;Antibiotiques
+98;31;F;Pneumologie;Pneumonie;15;8640;29/01/2025;13/02/2025;Médication
+99;18;M;Orthopédie;Alzheimer;12;4536;03/12/2025;15/12/2025;Physiothérapie
+100;28;M;Gériatrie;Alzheimer;6;3462;09/01/2025;15/01/2025;Soins spéciaux
+101;54;M;Orthopédie;Eczéma;7;3493;24/10/2025;31/10/2025;Radiothérapie
+102;90;M;Dermatologie;Eczéma;10;4940;19/08/2025;29/08/2025;Soins spéciaux
+103;1;F;Pneumologie;Eczéma;7;3598;12/07/2025;19/07/2025;Radiothérapie
+104;70;M;Gériatrie;Fracture;5;2615;14/08/2025;19/08/2025;Soins spéciaux
+105;4;F;Pneumologie;Cancer;11;5577;04/09/2025;15/09/2025;Physiothérapie
+106;22;F;Orthopédie;Hypertension;9;2817;04/04/2025;13/04/2025;Soins spéciaux
+107;76;M;Cardiologie;Cancer;7;2583;30/03/2025;06/04/2025;Soins spéciaux
+108;24;M;Pneumologie;Alzheimer;6;2448;28/10/2025;03/11/2025;Soins spéciaux
+109;42;F;Dermatologie;Alzheimer;5;3425;09/08/2025;14/08/2025;Soins spéciaux
+110;33;M;Gériatrie;Infarctus;12;6912;23/01/2025;04/02/2025;Médication
+111;45;M;Oncologie;Infarctus;13;8229;03/05/2025;16/05/2025;Médication
+112;4;M;Orthopédie;Eczéma;1;618;03/03/2025;04/03/2025;Chirurgie
+113;31;M;Gériatrie;Cancer;2;1176;17/01/2025;19/01/2025;Chirurgie
+114;60;F;Dermatologie;Pneumonie;3;1830;30/03/2025;02/04/2025;Radiothérapie
+115;15;M;Pneumologie;Infarctus;10;3130;29/08/2025;08/09/2025;Antibiotiques
+116;74;F;Gériatrie;Cancer;4;1352;01/08/2025;05/08/2025;Radiothérapie
+117;89;M;Cardiologie;Cancer;13;5902;25/02/2025;10/03/2025;Physiothérapie
+118;77;M;Dermatologie;Hypertension;13;4173;10/01/2025;23/01/2025;Antibiotiques
+119;69;F;Oncologie;Pneumonie;2;1118;24/08/2025;26/08/2025;Physiothérapie
+120;44;M;Dermatologie;Alzheimer;14;7700;24/09/2025;08/10/2025;Médication
+121;56;F;Oncologie;Eczéma;8;5296;01/04/2025;09/04/2025;Chirurgie
+122;56;M;Oncologie;Hypertension;11;4818;11/02/2025;22/02/2025;Radiothérapie
+123;69;F;Gériatrie;Alzheimer;14;9436;17/03/2025;31/03/2025;Radiothérapie
+124;35;F;Dermatologie;Fracture;14;4816;12/06/2025;26/06/2025;Antibiotiques
+125;58;M;Dermatologie;Alzheimer;10;6120;23/10/2025;02/11/2025;Physiothérapie
+126;49;F;Cardiologie;Alzheimer;14;6524;16/07/2025;30/07/2025;Chirurgie
+127;63;M;Pneumologie;Eczéma;5;2370;24/02/2025;01/03/2025;Antibiotiques
+128;77;F;Neurologie;Infarctus;9;3573;16/11/2025;25/11/2025;Médication
+129;31;F;Gériatrie;Hypertension;13;5499;19/05/2025;01/06/2025;Physiothérapie
+130;61;F;Gériatrie;Eczéma;1;347;28/11/2025;29/11/2025;Antibiotiques
+131;29;F;Oncologie;Fracture;5;3195;22/03/2025;27/03/2025;Radiothérapie
+132;48;F;Neurologie;Hypertension;6;3102;20/05/2025;26/05/2025;Physiothérapie
+133;71;F;Pneumologie;Cancer;8;3504;19/07/2025;27/07/2025;Antibiotiques
+134;33;M;Cardiologie;Cancer;4;1844;28/02/2025;04/03/2025;Médication
+135;69;M;Orthopédie;Fracture;12;6564;14/02/2025;26/02/2025;Antibiotiques
+136;76;F;Cardiologie;Eczéma;4;1804;12/01/2025;16/01/2025;Chirurgie
+137;47;M;Pneumologie;Infarctus;12;6876;18/11/2025;30/11/2025;Chirurgie
+138;36;M;Cardiologie;Hypertension;5;3285;27/08/2025;01/09/2025;Chirurgie
+139;82;F;Cardiologie;Eczéma;1;593;21/03/2025;22/03/2025;Antibiotiques
+140;61;F;Gériatrie;Pneumonie;3;978;24/10/2025;27/10/2025;Antibiotiques
+141;62;M;Dermatologie;Infarctus;7;3857;18/08/2025;25/08/2025;Médication
+142;74;M;Orthopédie;Fracture;13;7644;26/10/2025;08/11/2025;Antibiotiques
+143;11;M;Cardiologie;Hypertension;13;6669;28/12/2024;10/01/2025;Radiothérapie
+144;77;M;Dermatologie;Hypertension;7;3710;09/03/2025;16/03/2025;Soins spéciaux
+145;39;F;Pneumologie;Hypertension;10;3300;10/05/2025;20/05/2025;Radiothérapie
+146;13;M;Oncologie;Fracture;5;3190;08/06/2025;13/06/2025;Médication
+147;21;M;Orthopédie;Hypertension;2;760;03/02/2025;05/02/2025;Médication
+148;53;F;Oncologie;Hypertension;8;3592;12/08/2025;20/08/2025;Médication
+149;30;F;Oncologie;Pneumonie;12;6384;08/01/2025;20/01/2025;Médication
+150;88;M;Pneumologie;Eczéma;13;8060;15/01/2025;28/01/2025;Radiothérapie
+151;85;M;Gériatrie;Infarctus;9;3735;02/07/2025;11/07/2025;Physiothérapie
+152;20;F;Dermatologie;Fracture;2;660;11/07/2025;13/07/2025;Chirurgie
+153;40;F;Gériatrie;Infarctus;8;5216;29/10/2025;06/11/2025;Antibiotiques
+154;90;F;Pneumologie;Hypertension;9;4968;15/10/2025;24/10/2025;Soins spéciaux
+155;11;M;Gériatrie;Cancer;6;3654;28/12/2024;03/01/2025;Antibiotiques
+156;4;M;Orthopédie;Cancer;14;8316;14/01/2025;28/01/2025;Radiothérapie
+157;3;F;Neurologie;Infarctus;13;8931;02/07/2025;15/07/2025;Chirurgie
+158;61;F;Pneumologie;Fracture;10;5230;14/02/2025;24/02/2025;Physiothérapie
+159;63;M;Gériatrie;Pneumonie;7;3290;14/02/2025;21/02/2025;Antibiotiques
+160;86;M;Dermatologie;Fracture;6;3060;31/05/2025;06/06/2025;Physiothérapie
+161;64;F;Oncologie;Alzheimer;14;9646;11/10/2025;25/10/2025;Radiothérapie
+162;5;F;Cardiologie;Pneumonie;5;2325;18/08/2025;23/08/2025;Médication
+163;52;M;Oncologie;Eczéma;9;4824;13/07/2025;22/07/2025;Soins spéciaux
+164;7;M;Neurologie;Pneumonie;10;6870;14/08/2025;24/08/2025;Soins spéciaux
+165;81;F;Dermatologie;Infarctus;4;1744;01/11/2025;05/11/2025;Radiothérapie
+166;17;F;Gériatrie;Cancer;8;2896;20/09/2025;28/09/2025;Médication
+167;81;M;Oncologie;Fracture;5;2910;09/02/2025;14/02/2025;Médication
+168;71;F;Cardiologie;Fracture;14;5012;25/11/2025;09/12/2025;Soins spéciaux
+169;16;M;Gériatrie;Cancer;5;2800;29/12/2024;03/01/2025;Physiothérapie
+170;35;F;Dermatologie;Alzheimer;8;3392;09/10/2025;17/10/2025;Soins spéciaux
+171;71;M;Gériatrie;Fracture;15;9090;29/12/2024;13/01/2025;Radiothérapie
+172;18;M;Pneumologie;Eczéma;13;6656;09/04/2025;22/04/2025;Antibiotiques
+173;65;F;Dermatologie;Infarctus;5;3355;01/03/2025;06/03/2025;Antibiotiques
+174;76;F;Dermatologie;Fracture;8;4600;30/04/2025;08/05/2025;Soins spéciaux
+175;45;F;Neurologie;Eczéma;9;4437;19/04/2025;28/04/2025;Soins spéciaux
+176;42;M;Oncologie;Fracture;10;4960;09/04/2025;19/04/2025;Chirurgie
+177;53;M;Pneumologie;Cancer;8;5288;08/12/2024;16/12/2024;Soins spéciaux
+178;50;M;Gériatrie;Infarctus;3;1671;11/02/2025;14/02/2025;Radiothérapie
+179;43;M;Dermatologie;Eczéma;8;2808;15/05/2025;23/05/2025;Radiothérapie
+180;59;M;Oncologie;Fracture;7;4445;31/07/2025;07/08/2025;Chirurgie
+181;10;F;Dermatologie;Pneumonie;6;3714;29/05/2025;04/06/2025;Physiothérapie
+182;51;M;Dermatologie;Pneumonie;14;9030;29/04/2025;13/05/2025;Radiothérapie
+183;49;F;Oncologie;Cancer;15;10320;08/02/2025;23/02/2025;Soins spéciaux
+184;70;M;Neurologie;Infarctus;4;2492;19/01/2025;23/01/2025;Physiothérapie
+185;37;M;Oncologie;Infarctus;7;2450;01/02/2025;08/02/2025;Physiothérapie
+186;13;F;Orthopédie;Cancer;5;1570;03/11/2025;08/11/2025;Médication
+187;42;M;Pneumologie;Pneumonie;6;3120;23/08/2025;29/08/2025;Chirurgie
+188;32;F;Neurologie;Cancer;13;5096;02/05/2025;15/05/2025;Chirurgie
+189;23;M;Neurologie;Eczéma;7;4319;15/04/2025;22/04/2025;Physiothérapie
+190;31;F;Neurologie;Fracture;4;2144;12/10/2025;16/10/2025;Physiothérapie
+191;33;F;Pneumologie;Cancer;1;538;28/02/2025;01/03/2025;Antibiotiques
+192;87;M;Cardiologie;Alzheimer;6;3600;29/05/2025;04/06/2025;Antibiotiques
+193;82;F;Oncologie;Pneumonie;8;3632;27/04/2025;05/05/2025;Chirurgie
+194;50;F;Cardiologie;Fracture;7;4144;15/03/2025;22/03/2025;Antibiotiques
+195;74;F;Oncologie;Pneumonie;1;637;25/09/2025;26/09/2025;Soins spéciaux
+196;36;M;Neurologie;Eczéma;11;7678;19/07/2025;30/07/2025;Physiothérapie
+197;7;F;Dermatologie;Pneumonie;13;5421;21/06/2025;04/07/2025;Radiothérapie
+198;46;M;Oncologie;Fracture;10;4280;21/12/2024;31/12/2024;Physiothérapie
+199;85;M;Oncologie;Infarctus;15;9315;31/10/2025;15/11/2025;Physiothérapie
+200;6;F;Dermatologie;Alzheimer;1;596;27/03/2025;28/03/2025;Antibiotiques
+201;17;M;Pneumologie;Pneumonie;12;6144;01/09/2025;13/09/2025;Chirurgie
+202;26;M;Dermatologie;Hypertension;15;7305;08/02/2025;23/02/2025;Radiothérapie
+203;65;F;Dermatologie;Fracture;5;2730;10/12/2024;15/12/2024;Antibiotiques
+204;44;M;Gériatrie;Infarctus;3;2058;16/01/2025;19/01/2025;Chirurgie
+205;87;F;Dermatologie;Eczéma;9;4383;14/05/2025;23/05/2025;Médication
+206;51;M;Pneumologie;Hypertension;2;1064;05/07/2025;07/07/2025;Antibiotiques
+207;87;F;Neurologie;Alzheimer;14;8764;06/12/2025;20/12/2025;Antibiotiques
+208;14;M;Gériatrie;Infarctus;10;5870;03/07/2025;13/07/2025;Antibiotiques
+209;79;M;Oncologie;Infarctus;11;5907;05/10/2025;16/10/2025;Physiothérapie
+210;39;F;Cardiologie;Fracture;1;319;07/12/2025;08/12/2025;Antibiotiques
+211;64;M;Cardiologie;Fracture;15;8625;04/01/2025;19/01/2025;Chirurgie
+212;50;F;Pneumologie;Cancer;12;7872;11/05/2025;23/05/2025;Radiothérapie
+213;54;M;Gériatrie;Cancer;2;1100;02/02/2025;04/02/2025;Radiothérapie
+214;53;F;Cardiologie;Cancer;6;2466;22/03/2025;28/03/2025;Soins spéciaux
+215;57;M;Dermatologie;Pneumonie;2;1302;18/01/2025;20/01/2025;Antibiotiques
+216;70;F;Cardiologie;Alzheimer;5;1985;07/07/2025;12/07/2025;Médication
+217;59;M;Oncologie;Fracture;11;6897;12/11/2025;23/11/2025;Radiothérapie
+218;3;M;Dermatologie;Pneumonie;4;1456;24/06/2025;28/06/2025;Radiothérapie
+219;27;M;Dermatologie;Eczéma;9;3654;26/09/2025;05/10/2025;Radiothérapie
+220;28;M;Pneumologie;Eczéma;3;1815;01/02/2025;04/02/2025;Médication
+221;36;M;Orthopédie;Hypertension;5;1945;30/06/2025;05/07/2025;Médication
+222;85;M;Orthopédie;Infarctus;6;2526;25/01/2025;31/01/2025;Radiothérapie
+223;42;M;Orthopédie;Pneumonie;1;364;17/01/2025;18/01/2025;Physiothérapie
+224;54;M;Oncologie;Infarctus;8;4232;13/08/2025;21/08/2025;Antibiotiques
+225;66;M;Gériatrie;Hypertension;4;2456;04/12/2025;08/12/2025;Médication
+226;85;F;Gériatrie;Cancer;1;331;26/08/2025;27/08/2025;Soins spéciaux
+227;52;F;Oncologie;Infarctus;8;5312;25/12/2024;02/01/2025;Soins spéciaux
+228;10;M;Pneumologie;Hypertension;3;999;17/04/2025;20/04/2025;Chirurgie
+229;36;F;Gériatrie;Hypertension;9;4050;14/12/2024;23/12/2024;Soins spéciaux
+230;65;F;Cardiologie;Eczéma;12;4296;15/04/2025;27/04/2025;Physiothérapie
+231;84;M;Gériatrie;Alzheimer;15;6240;20/07/2025;04/08/2025;Soins spéciaux
+232;44;F;Gériatrie;Alzheimer;12;4176;15/04/2025;27/04/2025;Antibiotiques
+233;55;F;Oncologie;Pneumonie;6;2268;25/01/2025;31/01/2025;Physiothérapie
+234;61;M;Cardiologie;Eczéma;2;694;30/08/2025;01/09/2025;Soins spéciaux
+235;13;F;Dermatologie;Fracture;9;2970;16/07/2025;25/07/2025;Radiothérapie
+236;72;F;Oncologie;Infarctus;7;3367;12/06/2025;19/06/2025;Physiothérapie
+237;55;M;Pneumologie;Hypertension;5;2400;05/03/2025;10/03/2025;Médication
+238;74;M;Orthopédie;Cancer;8;3312;14/03/2025;22/03/2025;Médication
+239;45;F;Cardiologie;Eczéma;5;2965;10/09/2025;15/09/2025;Chirurgie
+240;55;M;Neurologie;Cancer;14;9170;30/04/2025;14/05/2025;Antibiotiques
+241;4;M;Pneumologie;Cancer;13;5954;22/11/2025;05/12/2025;Antibiotiques
+242;45;M;Orthopédie;Eczéma;3;1767;01/07/2025;04/07/2025;Physiothérapie
+243;52;M;Orthopédie;Cancer;11;3465;03/03/2025;14/03/2025;Médication
+244;68;M;Gériatrie;Alzheimer;8;3792;23/04/2025;01/05/2025;Chirurgie
+245;48;F;Oncologie;Pneumonie;13;7670;15/08/2025;28/08/2025;Radiothérapie
+246;11;M;Orthopédie;Fracture;13;8008;09/12/2024;22/12/2024;Médication
+247;87;M;Pneumologie;Alzheimer;11;5687;05/06/2025;16/06/2025;Soins spéciaux
+248;78;F;Gériatrie;Pneumonie;4;2744;17/02/2025;21/02/2025;Radiothérapie
+249;15;F;Gériatrie;Infarctus;5;3235;04/06/2025;09/06/2025;Physiothérapie
+250;76;F;Neurologie;Cancer;5;1615;12/05/2025;17/05/2025;Chirurgie
+251;51;M;Cardiologie;Fracture;5;2040;09/01/2025;14/01/2025;Chirurgie
+252;33;F;Pneumologie;Infarctus;1;554;06/06/2025;07/06/2025;Physiothérapie
+253;56;M;Orthopédie;Alzheimer;9;5940;27/11/2025;06/12/2025;Chirurgie
+254;65;F;Cardiologie;Alzheimer;14;9506;14/08/2025;28/08/2025;Médication
+255;56;M;Gériatrie;Infarctus;14;6440;13/07/2025;27/07/2025;Radiothérapie
+256;55;F;Oncologie;Cancer;7;3136;29/06/2025;06/07/2025;Médication
+257;52;M;Pneumologie;Fracture;13;8008;18/09/2025;01/10/2025;Soins spéciaux
+258;89;F;Cardiologie;Alzheimer;14;4956;24/06/2025;08/07/2025;Chirurgie
+259;56;F;Neurologie;Infarctus;7;3206;15/08/2025;22/08/2025;Physiothérapie
+260;44;M;Pneumologie;Eczéma;3;1017;13/09/2025;16/09/2025;Radiothérapie
+261;82;M;Neurologie;Hypertension;4;2788;01/02/2025;05/02/2025;Antibiotiques
+262;45;M;Orthopédie;Infarctus;3;1293;22/07/2025;25/07/2025;Chirurgie
+263;23;M;Dermatologie;Eczéma;11;3718;25/02/2025;08/03/2025;Chirurgie
+264;81;F;Gériatrie;Eczéma;10;6890;25/03/2025;04/04/2025;Radiothérapie
+265;58;F;Dermatologie;Cancer;6;2262;27/08/2025;02/09/2025;Soins spéciaux
+266;9;F;Gériatrie;Cancer;5;2200;21/05/2025;26/05/2025;Radiothérapie
+267;8;F;Neurologie;Infarctus;5;2680;22/10/2025;27/10/2025;Soins spéciaux
+268;5;M;Pneumologie;Eczéma;5;1695;27/05/2025;01/06/2025;Physiothérapie
+269;12;F;Gériatrie;Hypertension;9;6102;13/07/2025;22/07/2025;Médication
+270;58;M;Pneumologie;Hypertension;8;4448;05/01/2025;13/01/2025;Chirurgie
+271;8;F;Cardiologie;Eczéma;15;7125;12/10/2025;27/10/2025;Physiothérapie
+272;11;M;Cardiologie;Fracture;12;6288;19/06/2025;01/07/2025;Soins spéciaux
+273;68;M;Pneumologie;Pneumonie;15;6660;14/11/2025;29/11/2025;Soins spéciaux
+274;53;F;Oncologie;Hypertension;1;623;01/07/2025;02/07/2025;Physiothérapie
+275;43;M;Pneumologie;Infarctus;9;5823;23/06/2025;02/07/2025;Soins spéciaux
+276;37;F;Oncologie;Eczéma;11;6688;31/03/2025;11/04/2025;Chirurgie
+277;43;M;Neurologie;Cancer;3;1437;03/06/2025;06/06/2025;Antibiotiques
+278;84;F;Orthopédie;Hypertension;12;4116;16/12/2024;28/12/2024;Antibiotiques
+279;72;F;Oncologie;Eczéma;6;2190;16/02/2025;22/02/2025;Physiothérapie
+280;90;M;Oncologie;Cancer;7;3920;23/10/2025;30/10/2025;Antibiotiques
+281;3;F;Pneumologie;Fracture;4;1896;19/08/2025;23/08/2025;Soins spéciaux
+282;25;M;Orthopédie;Fracture;2;902;06/10/2025;08/10/2025;Médication
+283;65;M;Oncologie;Pneumonie;15;10380;08/09/2025;23/09/2025;Radiothérapie
+284;17;F;Orthopédie;Fracture;3;1962;05/08/2025;08/08/2025;Radiothérapie
+285;22;F;Cardiologie;Alzheimer;6;3876;30/04/2025;06/05/2025;Physiothérapie
+286;31;F;Neurologie;Pneumonie;13;8879;09/09/2025;22/09/2025;Soins spéciaux
+287;30;M;Pneumologie;Eczéma;13;7020;26/02/2025;11/03/2025;Chirurgie
+288;48;F;Gériatrie;Eczéma;5;3490;21/07/2025;26/07/2025;Soins spéciaux
+289;65;F;Orthopédie;Eczéma;4;2436;27/03/2025;31/03/2025;Chirurgie
+290;33;M;Oncologie;Alzheimer;14;6860;13/01/2025;27/01/2025;Radiothérapie
+291;14;M;Pneumologie;Infarctus;13;4966;03/06/2025;16/06/2025;Antibiotiques
+292;58;M;Dermatologie;Alzheimer;2;826;01/02/2025;03/02/2025;Soins spéciaux
+293;45;M;Gériatrie;Infarctus;7;3899;17/08/2025;24/08/2025;Antibiotiques
+294;31;F;Cardiologie;Pneumonie;4;1256;29/09/2025;03/10/2025;Antibiotiques
+295;13;F;Dermatologie;Fracture;3;957;21/06/2025;24/06/2025;Antibiotiques
+296;61;M;Dermatologie;Cancer;8;4232;11/07/2025;19/07/2025;Radiothérapie
+297;1;M;Cardiologie;Pneumonie;4;1504;24/06/2025;28/06/2025;Radiothérapie
+298;78;F;Cardiologie;Eczéma;5;2105;22/09/2025;27/09/2025;Antibiotiques
+299;16;M;Orthopédie;Alzheimer;11;6798;29/07/2025;09/08/2025;Soins spéciaux
+300;9;M;Dermatologie;Alzheimer;10;5740;10/04/2025;20/04/2025;Médication
+301;81;M;Oncologie;Fracture;5;2595;24/10/2025;29/10/2025;Médication
+302;79;F;Orthopédie;Hypertension;7;2765;10/12/2024;17/12/2024;Physiothérapie
+303;86;M;Neurologie;Pneumonie;2;1138;26/05/2025;28/05/2025;Radiothérapie
+304;65;M;Gériatrie;Eczéma;8;2576;19/08/2025;27/08/2025;Physiothérapie
+305;50;F;Pneumologie;Cancer;1;482;23/11/2025;24/11/2025;Médication
+306;45;M;Oncologie;Cancer;11;3883;08/07/2025;19/07/2025;Radiothérapie
+307;43;M;Cardiologie;Pneumonie;9;4257;04/01/2025;13/01/2025;Physiothérapie
+308;23;F;Oncologie;Alzheimer;11;4323;31/10/2025;11/11/2025;Chirurgie
+309;9;F;Cardiologie;Pneumonie;4;1288;04/02/2025;08/02/2025;Chirurgie
+310;6;F;Pneumologie;Hypertension;7;4046;25/07/2025;01/08/2025;Soins spéciaux
+311;33;M;Dermatologie;Cancer;4;1784;24/07/2025;28/07/2025;Antibiotiques
+312;7;F;Pneumologie;Infarctus;13;6344;25/01/2025;07/02/2025;Soins spéciaux
+313;52;F;Gériatrie;Pneumonie;3;1662;18/09/2025;21/09/2025;Physiothérapie
+314;64;F;Dermatologie;Hypertension;5;1710;27/11/2025;02/12/2025;Physiothérapie
+315;55;M;Gériatrie;Hypertension;14;5488;26/09/2025;10/10/2025;Radiothérapie
+316;38;F;Cardiologie;Infarctus;6;3828;06/10/2025;12/10/2025;Antibiotiques
+317;40;F;Neurologie;Cancer;7;2695;12/07/2025;19/07/2025;Physiothérapie
+318;57;F;Gériatrie;Infarctus;12;5760;07/10/2025;19/10/2025;Radiothérapie
+319;56;F;Oncologie;Eczéma;1;338;28/03/2025;29/03/2025;Physiothérapie
+320;82;F;Pneumologie;Hypertension;13;8879;20/08/2025;02/09/2025;Physiothérapie
+321;21;M;Orthopédie;Eczéma;10;6470;13/04/2025;23/04/2025;Soins spéciaux
+322;5;M;Cardiologie;Fracture;13;8190;09/12/2024;22/12/2024;Antibiotiques
+323;47;F;Neurologie;Infarctus;10;3780;01/10/2025;11/10/2025;Physiothérapie
+324;58;F;Pneumologie;Alzheimer;13;4407;21/03/2025;03/04/2025;Radiothérapie
+325;18;F;Gériatrie;Pneumonie;11;4862;04/03/2025;15/03/2025;Chirurgie
+326;15;M;Oncologie;Fracture;8;4520;29/06/2025;07/07/2025;Soins spéciaux
+327;72;M;Pneumologie;Eczéma;5;3300;27/02/2025;04/03/2025;Soins spéciaux
+328;28;F;Oncologie;Alzheimer;4;1448;04/02/2025;08/02/2025;Chirurgie
+329;10;F;Orthopédie;Cancer;8;2752;12/05/2025;20/05/2025;Physiothérapie
+330;41;F;Oncologie;Infarctus;9;5193;02/05/2025;11/05/2025;Antibiotiques
+331;39;M;Oncologie;Cancer;15;9870;17/10/2025;01/11/2025;Physiothérapie
+332;23;F;Neurologie;Fracture;2;804;11/12/2024;13/12/2024;Chirurgie
+333;31;F;Cardiologie;Pneumonie;9;5337;08/05/2025;17/05/2025;Antibiotiques
+334;60;M;Neurologie;Infarctus;2;916;02/01/2025;04/01/2025;Soins spéciaux
+335;62;F;Dermatologie;Alzheimer;14;8316;04/09/2025;18/09/2025;Médication
+336;17;F;Oncologie;Infarctus;8;4304;03/08/2025;11/08/2025;Physiothérapie
+337;67;F;Orthopédie;Eczéma;13;7566;28/01/2025;10/02/2025;Physiothérapie
+338;76;M;Dermatologie;Fracture;7;3899;05/10/2025;12/10/2025;Médication
+339;16;M;Pneumologie;Fracture;3;1395;11/02/2025;14/02/2025;Physiothérapie
+340;29;F;Neurologie;Pneumonie;14;4760;10/11/2025;24/11/2025;Antibiotiques
+341;26;F;Orthopédie;Cancer;5;3070;05/04/2025;10/04/2025;Radiothérapie
+342;12;M;Neurologie;Hypertension;3;1161;21/02/2025;24/02/2025;Physiothérapie
+343;80;F;Dermatologie;Hypertension;1;314;02/08/2025;03/08/2025;Médication
+344;6;F;Oncologie;Fracture;13;7696;10/11/2025;23/11/2025;Soins spéciaux
+345;80;M;Gériatrie;Cancer;9;4032;22/11/2025;01/12/2025;Physiothérapie
+346;39;F;Orthopédie;Eczéma;13;8450;20/02/2025;05/03/2025;Soins spéciaux
+347;39;F;Cardiologie;Cancer;1;380;06/03/2025;07/03/2025;Soins spéciaux
+348;54;F;Gériatrie;Fracture;6;3660;01/06/2025;07/06/2025;Chirurgie
+349;41;F;Oncologie;Eczéma;6;3024;03/07/2025;09/07/2025;Chirurgie
+350;48;M;Pneumologie;Fracture;8;2896;15/02/2025;23/02/2025;Antibiotiques
+351;58;M;Orthopédie;Infarctus;1;448;06/04/2025;07/04/2025;Soins spéciaux
+352;79;F;Orthopédie;Eczéma;15;5715;03/04/2025;18/04/2025;Antibiotiques
+353;74;F;Orthopédie;Eczéma;3;1665;31/03/2025;03/04/2025;Radiothérapie
+354;60;F;Pneumologie;Alzheimer;1;346;07/12/2025;08/12/2025;Soins spéciaux
+355;65;F;Orthopédie;Fracture;10;4800;10/05/2025;20/05/2025;Médication
+356;7;F;Gériatrie;Hypertension;15;9510;08/06/2025;23/06/2025;Physiothérapie
+357;61;F;Neurologie;Infarctus;14;4970;19/09/2025;03/10/2025;Soins spéciaux
+358;18;F;Oncologie;Pneumonie;13;6578;13/11/2025;26/11/2025;Antibiotiques
+359;6;F;Cardiologie;Hypertension;9;3591;29/11/2025;08/12/2025;Antibiotiques
+360;71;F;Cardiologie;Alzheimer;9;4770;26/07/2025;04/08/2025;Radiothérapie
+361;36;M;Orthopédie;Infarctus;7;3437;03/09/2025;10/09/2025;Antibiotiques
+362;72;F;Dermatologie;Fracture;4;2432;14/09/2025;18/09/2025;Radiothérapie
+363;52;M;Cardiologie;Infarctus;3;1995;14/06/2025;17/06/2025;Antibiotiques
+364;61;F;Orthopédie;Hypertension;15;8445;10/05/2025;25/05/2025;Chirurgie
+365;42;F;Orthopédie;Alzheimer;10;6780;16/12/2024;26/12/2024;Antibiotiques
+366;76;F;Neurologie;Eczéma;9;5148;13/11/2025;22/11/2025;Soins spéciaux
+367;73;F;Gériatrie;Eczéma;1;488;24/10/2025;25/10/2025;Antibiotiques
+368;87;M;Gériatrie;Hypertension;5;3355;08/08/2025;13/08/2025;Physiothérapie
+369;81;M;Neurologie;Alzheimer;5;3175;19/12/2024;24/12/2024;Radiothérapie
+370;74;M;Oncologie;Infarctus;10;5450;07/08/2025;17/08/2025;Chirurgie
+371;68;F;Orthopédie;Eczéma;11;4664;12/04/2025;23/04/2025;Médication
+372;74;M;Orthopédie;Infarctus;8;3680;11/06/2025;19/06/2025;Soins spéciaux
+373;20;F;Oncologie;Fracture;7;3892;16/12/2024;23/12/2024;Radiothérapie
+374;61;M;Oncologie;Fracture;9;3654;07/07/2025;16/07/2025;Radiothérapie
+375;42;F;Neurologie;Alzheimer;6;2328;09/01/2025;15/01/2025;Soins spéciaux
+376;69;F;Neurologie;Pneumonie;11;7645;02/07/2025;13/07/2025;Physiothérapie
+377;88;F;Neurologie;Alzheimer;4;1704;11/08/2025;15/08/2025;Antibiotiques
+378;72;F;Orthopédie;Pneumonie;13;5811;25/07/2025;07/08/2025;Physiothérapie
+379;27;F;Pneumologie;Alzheimer;6;3516;30/03/2025;05/04/2025;Physiothérapie
+380;36;F;Cardiologie;Hypertension;11;6358;23/03/2025;03/04/2025;Soins spéciaux
+381;51;F;Dermatologie;Eczéma;3;1344;24/04/2025;27/04/2025;Médication
+382;37;M;Pneumologie;Alzheimer;11;4741;06/11/2025;17/11/2025;Physiothérapie
+383;62;M;Orthopédie;Eczéma;9;3942;06/11/2025;15/11/2025;Radiothérapie
+384;90;F;Orthopédie;Infarctus;10;6790;08/12/2024;18/12/2024;Radiothérapie
+385;31;M;Cardiologie;Cancer;15;8565;09/09/2025;24/09/2025;Chirurgie
+386;82;M;Cardiologie;Infarctus;7;3283;30/06/2025;07/07/2025;Physiothérapie
+387;61;M;Oncologie;Eczéma;3;906;10/05/2025;13/05/2025;Radiothérapie
+388;21;F;Oncologie;Alzheimer;8;5064;28/03/2025;05/04/2025;Chirurgie
+389;37;F;Pneumologie;Cancer;1;693;28/02/2025;01/03/2025;Médication
+390;84;M;Neurologie;Cancer;12;3828;07/04/2025;19/04/2025;Chirurgie
+391;54;M;Cardiologie;Eczéma;7;3871;08/04/2025;15/04/2025;Chirurgie
+392;38;M;Cardiologie;Pneumonie;10;6080;18/02/2025;28/02/2025;Médication
+393;43;F;Gériatrie;Cancer;9;5112;12/08/2025;21/08/2025;Soins spéciaux
+394;18;F;Pneumologie;Fracture;13;4641;29/05/2025;11/06/2025;Antibiotiques
+395;21;F;Oncologie;Pneumonie;12;4740;11/09/2025;23/09/2025;Médication
+396;44;F;Neurologie;Cancer;13;5174;30/10/2025;12/11/2025;Chirurgie
+397;79;F;Dermatologie;Alzheimer;9;4203;30/09/2025;09/10/2025;Médication
+398;52;M;Orthopédie;Fracture;8;3720;06/12/2025;14/12/2025;Chirurgie
+399;1;F;Gériatrie;Fracture;8;5480;01/03/2025;09/03/2025;Antibiotiques
+400;43;F;Neurologie;Cancer;10;3050;07/01/2025;17/01/2025;Antibiotiques
+401;84;F;Oncologie;Fracture;1;641;21/09/2025;22/09/2025;Médication
+402;60;F;Orthopédie;Alzheimer;11;6127;10/11/2025;21/11/2025;Physiothérapie
+403;40;M;Oncologie;Pneumonie;6;3684;17/03/2025;23/03/2025;Chirurgie
+404;29;M;Gériatrie;Fracture;8;5456;14/04/2025;22/04/2025;Radiothérapie
+405;48;F;Oncologie;Hypertension;15;8115;14/12/2024;29/12/2024;Radiothérapie
+406;86;M;Dermatologie;Fracture;11;7546;24/12/2024;04/01/2025;Radiothérapie
+407;11;F;Neurologie;Cancer;6;2034;05/04/2025;11/04/2025;Radiothérapie
+408;15;M;Dermatologie;Hypertension;15;8370;06/08/2025;21/08/2025;Chirurgie
+409;74;M;Orthopédie;Pneumonie;14;7924;22/03/2025;05/04/2025;Soins spéciaux
+410;15;M;Oncologie;Hypertension;8;2768;02/10/2025;10/10/2025;Radiothérapie
+411;58;M;Gériatrie;Fracture;9;4608;10/02/2025;19/02/2025;Soins spéciaux
+412;73;M;Neurologie;Alzheimer;11;5027;30/12/2024;10/01/2025;Physiothérapie
+413;3;F;Pneumologie;Eczéma;1;681;16/03/2025;17/03/2025;Chirurgie
+414;75;M;Cardiologie;Alzheimer;6;3948;10/09/2025;16/09/2025;Médication
+415;70;M;Cardiologie;Alzheimer;1;446;03/11/2025;04/11/2025;Soins spéciaux
+416;24;M;Dermatologie;Cancer;12;7560;03/06/2025;15/06/2025;Soins spéciaux
+417;48;F;Gériatrie;Eczéma;15;7395;29/11/2025;14/12/2025;Soins spéciaux
+418;11;M;Oncologie;Eczéma;6;2160;13/12/2024;19/12/2024;Chirurgie
+419;69;F;Neurologie;Fracture;12;4968;22/07/2025;03/08/2025;Médication
+420;3;F;Gériatrie;Cancer;12;6936;02/10/2025;14/10/2025;Soins spéciaux
+421;69;F;Dermatologie;Fracture;4;2140;17/12/2024;21/12/2024;Antibiotiques
+422;20;F;Orthopédie;Cancer;13;4641;27/05/2025;09/06/2025;Médication
+423;85;F;Neurologie;Eczéma;15;4620;06/04/2025;21/04/2025;Chirurgie
+424;27;M;Cardiologie;Hypertension;1;528;13/07/2025;14/07/2025;Radiothérapie
+425;87;M;Orthopédie;Cancer;1;505;22/08/2025;23/08/2025;Soins spéciaux
+426;30;M;Dermatologie;Eczéma;13;4264;15/02/2025;28/02/2025;Chirurgie
+427;65;F;Orthopédie;Eczéma;15;10110;01/12/2025;16/12/2025;Radiothérapie
+428;41;F;Orthopédie;Pneumonie;15;5595;25/07/2025;09/08/2025;Physiothérapie
+429;67;M;Gériatrie;Pneumonie;5;1655;28/03/2025;02/04/2025;Radiothérapie
+430;76;M;Oncologie;Cancer;7;4088;08/03/2025;15/03/2025;Soins spéciaux
+431;7;F;Oncologie;Cancer;7;3976;03/11/2025;10/11/2025;Antibiotiques
+432;90;F;Gériatrie;Fracture;5;2460;06/11/2025;11/11/2025;Chirurgie
+433;69;F;Orthopédie;Eczéma;4;1812;06/11/2025;10/11/2025;Physiothérapie
+434;19;F;Cardiologie;Hypertension;7;3591;07/05/2025;14/05/2025;Radiothérapie
+435;68;M;Gériatrie;Fracture;5;2020;21/07/2025;26/07/2025;Antibiotiques
+436;83;M;Gériatrie;Eczéma;6;2082;15/07/2025;21/07/2025;Radiothérapie
+437;25;M;Pneumologie;Alzheimer;11;6699;28/04/2025;09/05/2025;Radiothérapie
+438;6;M;Orthopédie;Eczéma;13;7800;29/06/2025;12/07/2025;Physiothérapie
+439;86;M;Gériatrie;Fracture;14;6580;03/02/2025;17/02/2025;Antibiotiques
+440;2;M;Orthopédie;Cancer;2;1364;18/10/2025;20/10/2025;Soins spéciaux
+441;32;M;Gériatrie;Fracture;9;4176;21/08/2025;30/08/2025;Antibiotiques
+442;49;F;Neurologie;Cancer;6;2742;11/06/2025;17/06/2025;Antibiotiques
+443;47;F;Gériatrie;Infarctus;13;8697;29/04/2025;12/05/2025;Soins spéciaux
+444;41;M;Pneumologie;Pneumonie;7;2261;17/12/2024;24/12/2024;Radiothérapie
+445;29;M;Cardiologie;Pneumonie;9;5391;06/02/2025;15/02/2025;Radiothérapie
+446;54;F;Orthopédie;Fracture;6;2502;07/11/2025;13/11/2025;Soins spéciaux
+447;73;M;Gériatrie;Hypertension;11;7150;05/06/2025;16/06/2025;Antibiotiques
+448;33;F;Oncologie;Cancer;12;6612;17/07/2025;29/07/2025;Soins spéciaux
+449;22;F;Orthopédie;Fracture;12;6948;27/05/2025;08/06/2025;Soins spéciaux
+450;24;M;Neurologie;Infarctus;14;4732;24/08/2025;07/09/2025;Physiothérapie
+451;7;M;Gériatrie;Fracture;14;8708;04/07/2025;18/07/2025;Chirurgie
+452;9;M;Cardiologie;Fracture;9;4797;15/08/2025;24/08/2025;Antibiotiques
+453;8;F;Oncologie;Alzheimer;1;303;12/03/2025;13/03/2025;Radiothérapie
+454;71;F;Cardiologie;Infarctus;9;6021;11/07/2025;20/07/2025;Antibiotiques
+455;69;F;Cardiologie;Hypertension;14;9198;16/01/2025;30/01/2025;Physiothérapie
+456;56;M;Cardiologie;Infarctus;9;3384;22/06/2025;01/07/2025;Chirurgie
+457;25;F;Dermatologie;Pneumonie;5;2515;01/05/2025;06/05/2025;Médication
+458;48;F;Gériatrie;Hypertension;4;2624;20/08/2025;24/08/2025;Chirurgie
+459;39;M;Oncologie;Eczéma;11;7568;07/03/2025;18/03/2025;Médication
+460;12;F;Gériatrie;Alzheimer;9;4887;30/05/2025;08/06/2025;Médication
+461;82;M;Oncologie;Fracture;2;1110;27/03/2025;29/03/2025;Soins spéciaux
+462;83;F;Neurologie;Eczéma;2;1140;27/05/2025;29/05/2025;Médication
+463;30;M;Dermatologie;Cancer;15;8850;21/12/2024;05/01/2025;Soins spéciaux
+464;35;M;Cardiologie;Cancer;15;6645;02/11/2025;17/11/2025;Radiothérapie
+465;73;M;Orthopédie;Eczéma;6;1848;28/10/2025;03/11/2025;Chirurgie
+466;76;M;Dermatologie;Eczéma;12;6036;08/06/2025;20/06/2025;Médication
+467;39;M;Neurologie;Fracture;10;4990;17/11/2025;27/11/2025;Physiothérapie
+468;70;F;Gériatrie;Eczéma;12;4452;31/08/2025;12/09/2025;Physiothérapie
+469;11;F;Cardiologie;Infarctus;7;2926;08/08/2025;15/08/2025;Médication
+470;44;F;Dermatologie;Pneumonie;1;624;16/02/2025;17/02/2025;Antibiotiques
+471;58;F;Orthopédie;Pneumonie;9;4428;09/09/2025;18/09/2025;Soins spéciaux
+472;24;F;Cardiologie;Eczéma;10;4510;18/05/2025;28/05/2025;Chirurgie
+473;10;M;Pneumologie;Fracture;7;4648;31/12/2024;07/01/2025;Physiothérapie
+474;20;F;Pneumologie;Pneumonie;2;692;03/06/2025;05/06/2025;Médication
+475;40;F;Pneumologie;Eczéma;5;1760;01/04/2025;06/04/2025;Chirurgie
+476;12;M;Gériatrie;Alzheimer;9;5256;13/11/2025;22/11/2025;Radiothérapie
+477;53;M;Cardiologie;Infarctus;6;3498;28/05/2025;03/06/2025;Médication
+478;77;F;Dermatologie;Alzheimer;1;449;05/12/2025;06/12/2025;Soins spéciaux
+479;50;M;Oncologie;Hypertension;15;6360;24/09/2025;09/10/2025;Radiothérapie
+480;67;M;Oncologie;Alzheimer;3;1113;08/07/2025;11/07/2025;Antibiotiques
+481;39;F;Gériatrie;Fracture;2;770;10/03/2025;12/03/2025;Soins spéciaux
+482;36;F;Pneumologie;Alzheimer;13;4407;02/06/2025;15/06/2025;Antibiotiques
+483;33;M;Oncologie;Cancer;8;4832;20/08/2025;28/08/2025;Radiothérapie
+484;26;F;Cardiologie;Fracture;5;1515;12/04/2025;17/04/2025;Soins spéciaux
+485;43;F;Dermatologie;Eczéma;6;3150;19/11/2025;25/11/2025;Antibiotiques
+486;56;M;Pneumologie;Pneumonie;10;6550;15/12/2024;25/12/2024;Chirurgie
+487;62;F;Orthopédie;Alzheimer;6;2694;08/11/2025;14/11/2025;Physiothérapie
+488;89;F;Neurologie;Eczéma;4;1864;11/05/2025;15/05/2025;Soins spéciaux
+489;36;F;Pneumologie;Infarctus;15;8820;18/07/2025;02/08/2025;Chirurgie
+490;76;M;Oncologie;Eczéma;9;2817;10/01/2025;19/01/2025;Physiothérapie
+491;60;M;Gériatrie;Eczéma;5;3270;06/01/2025;11/01/2025;Médication
+492;53;F;Orthopédie;Cancer;5;2115;18/10/2025;23/10/2025;Antibiotiques
+493;85;M;Oncologie;Alzheimer;13;6409;24/03/2025;06/04/2025;Médication
+494;58;F;Neurologie;Alzheimer;9;5031;18/02/2025;27/02/2025;Physiothérapie
+495;54;M;Dermatologie;Pneumonie;12;6888;02/03/2025;14/03/2025;Radiothérapie
+496;82;M;Cardiologie;Eczéma;4;2544;08/01/2025;12/01/2025;Physiothérapie
+497;46;M;Oncologie;Hypertension;1;588;23/07/2025;24/07/2025;Physiothérapie
+498;87;F;Dermatologie;Pneumonie;13;6760;06/09/2025;19/09/2025;Médication
+499;2;M;Pneumologie;Fracture;9;6138;01/07/2025;10/07/2025;Radiothérapie
+500;72;M;Gériatrie;Pneumonie;7;3759;16/12/2024;23/12/2024;Physiothérapie

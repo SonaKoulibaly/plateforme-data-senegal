@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plateforme Data Sénégal — Hub Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/landing.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       BACKGROUND EFFECTS
+  ═══════════════════════════════════════════════════════ -->
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">📊</span>
+        </div>
+        <div class="nav-title-wrap">
+          <span class="nav-label">PLATEFORME</span>
+          <span class="nav-name">DATA SÉNÉGAL</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="/banque/"     class="nav-link nav-banque">🏦 Banque</a>
+        <a href="/energie/"    class="nav-link nav-energie">⚡ Énergie</a>
+        <a href="/assurance/"  class="nav-link nav-assurance">🛡 Assurance</a>
+        <a href="/hospitalier/" class="nav-link nav-hospitalier">🏥 Hospitalier</a>
+      </div>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">4 dashboards actifs</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Mastère 2 Big Data & Data Strategy · Sénégal
+      </div>
+
+      <h1 class="hero-title">
+        Plateforme<br/>
+        <span class="hero-accent">Data Analytics</span><br/>
+        Sénégal
+      </h1>
+
+      <p class="hero-desc">
+        Hub centralisé d'analyse de données multi-secteurs.<br/>
+        4 dashboards interactifs · MongoDB Atlas · Python · Dash
+      </p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num">4</span>
+          <span class="stat-lbl">Secteurs</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">188+</span>
+          <span class="stat-lbl">Enregistrements</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">2015</span>
+          <span class="stat-lbl">→ 2022</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">Atlas</span>
+          <span class="stat-lbl">MongoDB</span>
+        </div>
+      </div>
+
+      <a href="#dashboards" class="hero-cta">
+        Explorer les dashboards
+        <span class="cta-arrow">↓</span>
+      </a>
+    </div>
+
+    <!-- Illustration flottante -->
+    <div class="hero-visual">
+      <div class="visual-ring ring-1"></div>
+      <div class="visual-ring ring-2"></div>
+      <div class="visual-ring ring-3"></div>
+      <div class="visual-center">
+        <span class="visual-icon">📊</span>
+      </div>
+      <div class="visual-dot dot-1">🏦</div>
+      <div class="visual-dot dot-2">⚡</div>
+      <div class="visual-dot dot-3">🛡</div>
+      <div class="visual-dot dot-4">🏥</div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       DASHBOARDS GRID
+  ═══════════════════════════════════════════════════════ -->
+  <section class="dashboards" id="dashboards">
+    <div class="section-header">
+      <span class="section-tag">NOS ANALYSES</span>
+      <h2 class="section-title">Choisissez votre secteur</h2>
+      <p class="section-sub">Chaque dashboard offre une analyse complète avec KPIs, graphiques interactifs, carte et rapports téléchargeables.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- ── BANQUE ─────────────────────────────────────── -->
+      <a href="/banque/" class="dash-card card-banque">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icon-wrap icon-banque">
+            <span class="card-icon">🏦</span>
+          </div>
+          <div class="card-badge badge-banque">BCEAO · 2015–2022</div>
+        </div>
+        <h3 class="card-title">Secteur Bancaire</h3>
+        <p class="card-subtitle">Positionnement des banques au Sénégal</p>
+        <p class="card-desc">
+          Analyse de 24 banques sénégalaises — parts de marché, ratios financiers (ROA, ROE, CIR), 
+          évolution du bilan, carte interactive de Dakar.
+        </p>
+        <div class="card-stats">
+          <div class="cs"><span class="cs-val">24</span><span class="cs-lbl">Banques</span></div>
+          <div class="cs"><span class="cs-val">8</span><span class="cs-lbl">Années</span></div>
+          <div class="cs"><span class="cs-val">6</span><span class="cs-lbl">Onglets</span></div>
+          <div class="cs"><span class="cs-val">188</span><span class="cs-lbl">Docs</span></div>
+        </div>
+        <div class="card-tags">
+          <span class="tag">ROA / ROE</span>
+          <span class="tag">Heatmap</span>
+          <span class="tag">Carte Dakar</span>
+          <span class="tag">PDF Rapport</span>
+        </div>
+        <div class="card-footer">
+          <span class="cf-text">Accéder au dashboard</span>
+          <span class="cf-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- ── ÉNERGIE ────────────────────────────────────── -->
+      <a href="/energie/" class="dash-card card-energie">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icon-wrap icon-energie">
+            <span class="card-icon">⚡</span>
+          </div>
+          <div class="card-badge badge-energie">SolarDash · 2024</div>
+        </div>
+        <h3 class="card-title">Secteur Énergie</h3>
+        <p class="card-subtitle">Monitoring de la production solaire</p>
+        <p class="card-desc">
+          Analyse de 35 136 mesures horaires sur 4 sites photovoltaïques — 
+          performance, anomalies, variables environnementales.
+        </p>
+        <div class="card-stats">
+          <div class="cs"><span class="cs-val">35K+</span><span class="cs-lbl">Mesures</span></div>
+          <div class="cs"><span class="cs-val">4</span><span class="cs-lbl">Sites</span></div>
+          <div class="cs"><span class="cs-val">14</span><span class="cs-lbl">Variables</span></div>
+          <div class="cs"><span class="cs-val">2024</span><span class="cs-lbl">Année</span></div>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Production</span>
+          <span class="tag">Anomalies</span>
+          <span class="tag">Environnement</span>
+          <span class="tag">Rapport</span>
+        </div>
+        <div class="card-footer">
+          <span class="cf-text">Accéder au dashboard</span>
+          <span class="cf-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- ── ASSURANCE ──────────────────────────────────── -->
+      <a href="/assurance/" class="dash-card card-assurance">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icon-wrap icon-assurance">
+            <span class="card-icon">🛡</span>
+          </div>
+          <div class="card-badge badge-assurance">AssurAnalytics</div>
+        </div>
+        <h3 class="card-title">Secteur Assurance</h3>
+        <p class="card-subtitle">Analyse des sinistres & profil des assurés</p>
+        <p class="card-desc">
+          1 000 assurés analysés — taux de sinistralité, ratio S/P, 
+          coefficient B/M, profil démographique et recommandations tarifaires.
+        </p>
+        <div class="card-stats">
+          <div class="cs"><span class="cs-val">1000</span><span class="cs-lbl">Assurés</span></div>
+          <div class="cs"><span class="cs-val">484</span><span class="cs-lbl">Sinistres</span></div>
+          <div class="cs"><span class="cs-val">38.3%</span><span class="cs-lbl">Sinistralité</span></div>
+          <div class="cs"><span class="cs-val">4.7x</span><span class="cs-lbl">Ratio S/P</span></div>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Sinistralité</span>
+          <span class="tag">Ratio B/M</span>
+          <span class="tag">Tranches âge</span>
+          <span class="tag">Insights IA</span>
+        </div>
+        <div class="card-footer">
+          <span class="cf-text">Accéder au dashboard</span>
+          <span class="cf-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- ── HOSPITALIER ────────────────────────────────── -->
+      <a href="/hospitalier/" class="dash-card card-hospitalier">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icon-wrap icon-hospitalier">
+            <span class="card-icon">🏥</span>
+          </div>
+          <div class="card-badge badge-hospitalier">DataCare</div>
+        </div>
+        <h3 class="card-title">Secteur Hospitalier</h3>
+        <p class="card-subtitle">Optimisation des soins par la donnée</p>
+        <p class="card-desc">
+          500 patients analysés — répartition par département, pathologies, 
+          durée de séjour, coûts et insights clés pour les décideurs médicaux.
+        </p>
+        <div class="card-stats">
+          <div class="cs"><span class="cs-val">500</span><span class="cs-lbl">Patients</span></div>
+          <div class="cs"><span class="cs-val">8.0</span><span class="cs-lbl">Jours moy.</span></div>
+          <div class="cs"><span class="cs-val">4 060€</span><span class="cs-lbl">Coût moy.</span></div>
+          <div class="cs"><span class="cs-val">6</span><span class="cs-lbl">Pathologies</span></div>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Pathologies</span>
+          <span class="tag">Coûts</span>
+          <span class="tag">Tranches âge</span>
+          <span class="tag">Départements</span>
+        </div>
+        <div class="card-footer">
+          <span class="cf-text">Accéder au dashboard</span>
+          <span class="cf-arrow">→</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STACK TECHNIQUE
+  ═══════════════════════════════════════════════════════ -->
+  <section class="stack-section">
+    <div class="section-header">
+      <span class="section-tag">TECHNOLOGIE</span>
+      <h2 class="section-title">Stack Technique</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <span class="stack-icon">🐍</span>
+        <span class="stack-name">Python 3.12</span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">🌐</span>
+        <span class="stack-name">Flask</span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">📊</span>
+        <span class="stack-name">Dash · Plotly</span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">🍃</span>
+        <span class="stack-name">MongoDB Atlas</span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">🐼</span>
+        <span class="stack-name">Pandas</span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">🚀</span>
+        <span class="stack-name">Render Deploy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">📊</span>
+        <span class="footer-name">Plateforme Data Sénégal</span>
+      </div>
+      <div class="footer-links">
+        <a href="/banque/">Banque</a>
+        <span>·</span>
+        <a href="/energie/">Énergie</a>
+        <span>·</span>
+        <a href="/assurance/">Assurance</a>
+        <span>·</span>
+        <a href="/hospitalier/">Hospitalier</a>
+      </div>
+      <div class="footer-copy">
+        Mastère 2 Big Data & Data Strategy · Python · Dash · MongoDB Atlas
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll pour le bouton hero
+    document.querySelector('.hero-cta').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#dashboards').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Animation d'entrée des cartes au scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, i * 100);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.dash-card, .stack-item').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
