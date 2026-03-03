@@ -207,7 +207,7 @@ Dans Render → **Environment** → ajouter :
 ### Étape 4 — Déployer
 Cliquer **"Create Web Service"** → attendre 3–5 minutes.
 
-URL finale : `https://plateforme-data-senegal.onrender.com`
+URL finale : `https://plateforme-data-senegal1.onrender.com`
 
 ---
 
@@ -256,5 +256,6 @@ Mastère 2 Big Data & Data Strategy
 ---
 
 ## 📄 Licence
+
 
 Projet académique — Mastère 2 Big Data & Data Strategy · 2025–2026
