@@ -2,8 +2,9 @@ services:
   - type: web
     name: plateforme-data-senegal
     env: python
+    pythonVersion: "3.12"
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn run:server --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    startCommand: gunicorn run:server --bind 0.0.0.0:$PORT --workers 1 --timeout 120
     envVars:
       - key: MONGO_URI
         sync: false
