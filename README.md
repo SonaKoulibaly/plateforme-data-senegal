@@ -1,5 +1,5 @@
 # 🌍 Plateforme Data Sénégal
-link de la plateforme en ligne: https://plateforme-data-senegal1.onrender.com/
+## 🌐 Démo Live ICI👉 Voir le dashboard  de la plateforme en ligne: https://plateforme-data-senegal1.onrender.com/
 > Hub centralisé d'analyse de données multi-secteurs — 4 dashboards interactifs orchestrés par Flask
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
@@ -259,4 +259,5 @@ Mastère 2 Big Data & Data Strategy
 
 
 Projet académique — Mastère 2 Big Data & Data Strategy · 2025–2026
+
 
