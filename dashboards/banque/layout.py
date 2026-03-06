@@ -1,80 +1,74 @@
 """
 layout.py — Interface utilisateur du Dashboard Bancaire Sénégal
 ================================================================
-Design : Luxe financier africain — Marine profond + Or sénégalais + Blanc cassé
-Typographie : Syne (titres) + DM Sans (corps)
+Design  : Luxe financier africain — Marine profond + Or sénégalais + Blanc cassé
+Typo    : Syne (titres) + DM Sans (corps)
+Mise à jour : Ajout onglet 🤖 Prévisions ML + données 2015–2023
 """
 
 from dash import dcc, html
 import dash_bootstrap_components as dbc
-import pandas as pd
 
-# ─── Palette ──────────────────────────────────────────────────────────────────
+# ─── Palette de couleurs centralisée ─────────────────────────────────────────
 COLORS = {
-    "navy"    : "#0A1628",
-    "navy2"   : "#0F2040",
-    "gold"    : "#D4A843",
-    "gold2"   : "#F0C060",
-    "cream"   : "#F8F4EE",
-    "white"   : "#FFFFFF",
-    "success" : "#2ECC71",
-    "danger"  : "#E74C3C",
-    "muted"   : "#8899AA",
-    "card_bg" : "#111E35",
-    "border"  : "#1E3050",
+    "navy"   : "#0A1628",
+    "navy2"  : "#0F2040",
+    "gold"   : "#D4A843",
+    "gold2"  : "#F0C060",
+    "cream"  : "#F8F4EE",
+    "white"  : "#FFFFFF",
+    "success": "#2ECC71",
+    "danger" : "#E74C3C",
+    "muted"  : "#8899AA",
+    "card_bg": "#111E35",
+    "border" : "#1E3050",
 }
-
-def kpi_card(title, value, icon, color=COLORS["gold"], subtitle=""):
-    return dbc.Col(
-        html.Div([
-            html.Div([
-                html.Span(icon, style={"fontSize":"28px"}),
-                html.Div([
-                    html.P(title, className="kpi-label"),
-                    html.H3(value, className="kpi-value", style={"color": color}),
-                    html.P(subtitle, className="kpi-sub") if subtitle else None,
-                ]),
-            ], className="kpi-inner"),
-        ], className="kpi-card"),
-        xs=12, sm=6, md=3,
-    )
 
 
 def create_layout(app, df, annees, banques, groupes):
+    """
+    Construit le layout principal du dashboard.
 
-    # Valeurs initiales pour les KPI du header
-    last_year = max(annees)
-    df_last   = df[df['annee'] == last_year]
-    total_bilan   = df_last['bilan'].sum() / 1_000_000
-    nb_banques    = df_last['sigle'].nunique()
-    total_effectif = df_last['effectif'].sum()
-    moy_fonds_propres = df_last['fonds_propres'].mean() / 1000
+    Args:
+        app     : Instance Dash
+        df      : DataFrame banques_production (utilisé pour les valeurs initiales)
+        annees  : Liste des années disponibles  [2015..2023]
+        banques : Liste des sigles de banques
+        groupes : Liste des groupes bancaires
+    """
 
     return html.Div([
 
-        # ── Store pour les données filtrées (partagé entre callbacks) ──
+        # ── Store partagé entre tous les callbacks ────────────────
         dcc.Store(id="store-filtered"),
+        # Store pour les prédictions ML (évite recalcul à chaque clic)
+        dcc.Store(id="store-ml"),
 
-        # ══════════════════════════════════════════════════════════════
-        # HEADER / NAVBAR
-        # ══════════════════════════════════════════════════════════════
+        # ══════════════════════════════════════════════════════════
+        # HEADER
+        # ══════════════════════════════════════════════════════════
         html.Header([
             html.Div([
+
                 # Logo
                 html.Div([
                     html.Div([
-                        html.Img(src="/assets/logo.png", style={"height":"46px","width":"46px","borderRadius":"8px","objectFit":"contain"}),
+                        html.Img(src="/assets/logo.png",
+                                 style={"height":"46px","width":"46px",
+                                        "borderRadius":"8px","objectFit":"contain"}),
                         html.Div([
-                            html.Span("BANQUE", className="logo-top"),
-                            html.Span("SÉNÉGAL", className="logo-bottom"),
+                            html.Span("BANQUE",   className="logo-top"),
+                            html.Span("SÉNÉGAL",  className="logo-bottom"),
                         ], className="logo-text"),
                     ], className="logo-wrap"),
                 ], className="header-logo"),
 
-                # Titre central
+                # Titre central mis à jour avec 2023
                 html.Div([
-                    html.H1("Positionnement des Banques au Sénégal", className="header-title"),
-                    html.P("Analyse & Data Visualisation · BCEAO · 2015–2022", className="header-sub"),
+                    html.H1("Positionnement des Banques au Sénégal",
+                            className="header-title"),
+                    html.P("Analyse & Data Visualisation · BCEAO · 2015–2023",
+                           className="header-sub"),
                 ], className="header-center"),
 
                 # Boutons téléchargement
@@ -89,78 +83,95 @@ def create_layout(app, df, annees, banques, groupes):
                     dcc.Download(id="download-html"),
                     dcc.Download(id="download-pdf"),
                 ], className="header-actions"),
+
             ], className="header-inner"),
         ], className="main-header"),
 
-        # ══════════════════════════════════════════════════════════════
-        # BANDEAU KPI GLOBAUX — dynamiques via callbacks
-        # ══════════════════════════════════════════════════════════════
+        # ══════════════════════════════════════════════════════════
+        # BANDEAU KPI GLOBAUX — mis à jour dynamiquement
+        # ══════════════════════════════════════════════════════════
         html.Section([
             dbc.Row([
+
+                # KPI 1 : Total Actif Bancaire
                 dbc.Col(html.Div([
                     html.Div([
                         html.Span("💰", style={"fontSize":"28px"}),
                         html.Div([
                             html.P("Total Actif Bancaire", className="kpi-label"),
-                            html.H3(id="kpi-bilan", className="kpi-value", style={"color": COLORS["gold"]}),
+                            html.H3(id="kpi-bilan", className="kpi-value",
+                                    style={"color": COLORS["gold"]}),
                             html.P(id="kpi-bilan-sub", className="kpi-sub"),
                         ]),
                     ], className="kpi-inner"),
                 ], className="kpi-card"), xs=12, sm=6, md=3),
 
+                # KPI 2 : Banques Actives
                 dbc.Col(html.Div([
                     html.Div([
                         html.Span("🏦", style={"fontSize":"28px"}),
                         html.Div([
                             html.P("Banques Actives", className="kpi-label"),
-                            html.H3(id="kpi-banques", className="kpi-value", style={"color": "#5BC8F5"}),
+                            html.H3(id="kpi-banques", className="kpi-value",
+                                    style={"color": "#5BC8F5"}),
                             html.P("Sur le marché sénégalais", className="kpi-sub"),
                         ]),
                     ], className="kpi-inner"),
                 ], className="kpi-card"), xs=12, sm=6, md=3),
 
+                # KPI 3 : Effectif Total
                 dbc.Col(html.Div([
                     html.Div([
                         html.Span("👥", style={"fontSize":"28px"}),
                         html.Div([
                             html.P("Effectif Total", className="kpi-label"),
-                            html.H3(id="kpi-effectif", className="kpi-value", style={"color": COLORS["success"]}),
+                            html.H3(id="kpi-effectif", className="kpi-value",
+                                    style={"color": COLORS["success"]}),
                             html.P(id="kpi-effectif-sub", className="kpi-sub"),
                         ]),
                     ], className="kpi-inner"),
                 ], className="kpi-card"), xs=12, sm=6, md=3),
 
+                # KPI 4 : Fonds Propres Moy.
                 dbc.Col(html.Div([
                     html.Div([
                         html.Span("📊", style={"fontSize":"28px"}),
                         html.Div([
                             html.P("Fonds Propres Moy.", className="kpi-label"),
-                            html.H3(id="kpi-fonds", className="kpi-value", style={"color": "#B87BFF"}),
+                            html.H3(id="kpi-fonds", className="kpi-value",
+                                    style={"color": "#B87BFF"}),
                             html.P("Moyenne par banque", className="kpi-sub"),
                         ]),
                     ], className="kpi-inner"),
                 ], className="kpi-card"), xs=12, sm=6, md=3),
+
             ], className="g-3"),
         ], className="kpi-section"),
 
-        # ══════════════════════════════════════════════════════════════
-        # PANNEAU DE FILTRES + BOUTON RESET
-        # ══════════════════════════════════════════════════════════════
+        # ══════════════════════════════════════════════════════════
+        # PANNEAU DE FILTRES
+        # ══════════════════════════════════════════════════════════
         html.Section([
             html.Div([
+
+                # Filtre années — slider dynamique 2015-2023
                 html.Div([
                     html.Label("📅 PÉRIODE", className="filter-label"),
                     dcc.RangeSlider(
                         id="filter-annee",
                         min=min(annees), max=max(annees),
                         value=[min(annees), max(annees)],
-                        marks={y: {"label": str(y), "style":{"color":COLORS["cream"],"fontSize":"11px"}} for y in annees},
+                        marks={y: {
+                            "label": str(y),
+                            "style": {"color": COLORS["cream"], "fontSize": "11px"}
+                        } for y in annees},
                         step=1,
-                        tooltip={"placement":"bottom","always_visible":False},
+                        tooltip={"placement": "bottom", "always_visible": False},
                         className="slider-custom",
                     ),
                 ], className="filter-block filter-slider"),
 
+                # Filtre banques
                 html.Div([
                     html.Label("🏦 BANQUES", className="filter-label"),
                     dcc.Dropdown(
@@ -174,6 +185,7 @@ def create_layout(app, df, annees, banques, groupes):
                     ),
                 ], className="filter-block"),
 
+                # Filtre groupes
                 html.Div([
                     html.Label("🌍 GROUPE", className="filter-label"),
                     dcc.Dropdown(
@@ -186,20 +198,21 @@ def create_layout(app, df, annees, banques, groupes):
                     ),
                 ], className="filter-block"),
 
+                # Filtre indicateur
                 html.Div([
                     html.Label("📊 INDICATEUR", className="filter-label"),
                     dcc.Dropdown(
                         id="filter-indicateur",
                         options=[
-                            {"label": "🏛 Bilan (Total Actif)",      "value": "bilan"},
-                            {"label": "💼 Emplois (Crédits)",         "value": "emploi"},
-                            {"label": "💵 Ressources (Dépôts)",       "value": "ressources"},
-                            {"label": "🏗 Fonds Propres",             "value": "fonds_propres"},
-                            {"label": "📈 Produit Net Bancaire",      "value": "pnb"},
-                            {"label": "💰 Résultat Net",              "value": "resultat_net"},
-                            {"label": "⚖️ ROA (%)",                   "value": "roa"},
-                            {"label": "📉 ROE (%)",                   "value": "roe"},
-                            {"label": "🔄 Coefficient Exploitation",  "value": "cir"},
+                            {"label": "🏛 Bilan (Total Actif)",     "value": "bilan"},
+                            {"label": "💼 Emplois (Crédits)",        "value": "emploi"},
+                            {"label": "💵 Ressources (Dépôts)",      "value": "ressources"},
+                            {"label": "🏗 Fonds Propres",            "value": "fonds_propres"},
+                            {"label": "📈 Produit Net Bancaire",     "value": "pnb"},
+                            {"label": "💰 Résultat Net",             "value": "resultat_net"},
+                            {"label": "⚖️ ROA (%)",                  "value": "roa"},
+                            {"label": "📉 ROE (%)",                  "value": "roe"},
+                            {"label": "🔄 Coefficient Exploitation", "value": "cir"},
                         ],
                         value="bilan",
                         clearable=False,
@@ -207,7 +220,7 @@ def create_layout(app, df, annees, banques, groupes):
                     ),
                 ], className="filter-block"),
 
-                # ── Bouton Reset ──────────────────────────────────────
+                # Bouton reset
                 html.Div([
                     html.Label("↺ RESET", className="filter-label"),
                     html.Button("🔄 Réinitialiser",
@@ -220,43 +233,45 @@ def create_layout(app, df, annees, banques, groupes):
             ], className="filters-inner"),
         ], className="filters-section"),
 
-        # ══════════════════════════════════════════════════════════════
-        # ONGLETS PRINCIPAUX
-        # ══════════════════════════════════════════════════════════════
+        # ══════════════════════════════════════════════════════════
+        # ONGLETS PRINCIPAUX — 7 onglets dont 1 nouveau ML
+        # ══════════════════════════════════════════════════════════
         html.Section([
-            dcc.Tabs(id="main-tabs", value="tab-marche", className="main-tabs", children=[
+            dcc.Tabs(id="main-tabs", value="tab-marche",
+                     className="main-tabs", children=[
 
-                # ── ONGLET 1 : VUE MARCHÉ ──────────────────────────
-                dcc.Tab(label="🏛 Vue Marché", value="tab-marche", className="tab-item", selected_className="tab-selected"),
+                dcc.Tab(label="🏛 Vue Marché",       value="tab-marche",
+                        className="tab-item", selected_className="tab-selected"),
+                dcc.Tab(label="⚖️ Comparaison",      value="tab-comparaison",
+                        className="tab-item", selected_className="tab-selected"),
+                dcc.Tab(label="📈 Performance",      value="tab-performance",
+                        className="tab-item", selected_className="tab-selected"),
+                dcc.Tab(label="⚙️ Ratios Financiers",value="tab-ratios",
+                        className="tab-item", selected_className="tab-selected"),
+                dcc.Tab(label="🗺 Carte Sénégal",    value="tab-carte",
+                        className="tab-item", selected_className="tab-selected"),
+                dcc.Tab(label="🏆 Classement",       value="tab-classement",
+                        className="tab-item", selected_className="tab-selected"),
 
-                # ── ONGLET 2 : COMPARAISON ─────────────────────────
-                dcc.Tab(label="⚖️ Comparaison", value="tab-comparaison", className="tab-item", selected_className="tab-selected"),
+                # NOUVEL ONGLET : Prévisions ML
+                dcc.Tab(label="🤖 Prévisions ML",    value="tab-ml",
+                        className="tab-item tab-ml", selected_className="tab-selected"),
 
-                # ── ONGLET 3 : PERFORMANCE ─────────────────────────
-                dcc.Tab(label="📈 Performance", value="tab-performance", className="tab-item", selected_className="tab-selected"),
-
-                # ── ONGLET 4 : RATIOS FINANCIERS ───────────────────
-                dcc.Tab(label="⚙️ Ratios Financiers", value="tab-ratios", className="tab-item", selected_className="tab-selected"),
-
-                # ── ONGLET 5 : CARTE SÉNÉGAL ───────────────────────
-                dcc.Tab(label="🗺 Carte Sénégal", value="tab-carte", className="tab-item", selected_className="tab-selected"),
-
-                # ── ONGLET 6 : CLASSEMENT ──────────────────────────
-                dcc.Tab(label="🏆 Classement", value="tab-classement", className="tab-item", selected_className="tab-selected"),
             ]),
 
-            # Contenu dynamique des onglets
+            # Conteneur dynamique des onglets
             html.Div(id="tabs-content", className="tabs-content"),
 
         ], className="main-tabs-section"),
 
-        # ══════════════════════════════════════════════════════════════
-        # SECTION ANALYSE BANQUE INDIVIDUELLE
-        # ══════════════════════════════════════════════════════════════
+        # ══════════════════════════════════════════════════════════
+        # SECTION ANALYSE INDIVIDUELLE D'UNE BANQUE
+        # ══════════════════════════════════════════════════════════
         html.Section([
             html.Div([
-                html.H2("🔍 Analyse Individuelle d'une Banque", className="section-title"),
-                html.P("Sélectionnez une banque pour générer son profil complet et télécharger son rapport",
+                html.H2("🔍 Analyse Individuelle d'une Banque",
+                        className="section-title"),
+                html.P("Sélectionnez une banque pour générer son profil complet",
                        className="section-sub"),
             ], className="section-header"),
 
@@ -275,22 +290,24 @@ def create_layout(app, df, annees, banques, groupes):
                     dcc.Dropdown(
                         id="select-annee-profil",
                         options=[{"label": str(a), "value": a} for a in annees],
-                        value=max(annees),
+                        value=max(annees),   # ← 2023 par défaut
                         clearable=False,
                         className="dropdown-custom dropdown-lg",
                     ),
                 ], md=2),
                 dbc.Col([
                     html.Button("📄 Générer & Télécharger le Rapport PDF",
-                        id="btn-generer-rapport", className="btn-primary-action", n_clicks=0),
+                        id="btn-generer-rapport",
+                        className="btn-primary-action",
+                        n_clicks=0),
                     dcc.Download(id="download-rapport-individuel"),
                 ], md=3),
             ], className="g-3 mb-4"),
 
-            # KPIs de la banque sélectionnée
+            # KPIs banque sélectionnée
             html.Div(id="profil-banque-kpi"),
 
-            # Graphiques du profil
+            # Graphiques profil
             dbc.Row([
                 dbc.Col(dcc.Graph(id="graph-profil-evolution"), md=8),
                 dbc.Col(dcc.Graph(id="graph-profil-radar"),     md=4),
@@ -298,16 +315,16 @@ def create_layout(app, df, annees, banques, groupes):
 
         ], className="individual-section"),
 
-        # ══════════════════════════════════════════════════════════════
-        # FOOTER
-        # ══════════════════════════════════════════════════════════════
+        # ══════════════════════════════════════════════════════════
+        # FOOTER — mis à jour avec 2023
+        # ══════════════════════════════════════════════════════════
         html.Footer([
             html.Div([
                 html.Span("🏦 Dashboard Banques Sénégal"),
                 html.Span("·"),
-                html.Span("Source : BCEAO · Base Sénégal 2015–2022"),
+                html.Span("Source : BCEAO · Base Sénégal 2015–2023"),
                 html.Span("·"),
-                html.Span("Python · Dash · MongoDB Atlas"),
+                html.Span("Python · Dash · MongoDB Atlas · ML Prédictif"),
             ], className="footer-inner"),
         ], className="main-footer"),
 
