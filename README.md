@@ -1,7 +1,7 @@
 # 🌍 Plateforme Data Sénégal
-## 🌐 Démo Live ICI👉 Voir le dashboard  de la plateforme en ligne: https://plateforme-data-senegal1.onrender.com/
-> Hub centralisé d'analyse de données multi-secteurs — 4 dashboards interactifs orchestrés par Flask
 
+> Hub centralisé d'analyse de données multi-secteurs — 4 dashboards interactifs orchestrés par Flask
+## 🌐 Démo Live ICI👉 Voir le dashboard  de la plateforme en ligne: https://plateforme-data-senegal1.onrender.com/
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-3.0-black?logo=flask)
 ![Dash](https://img.shields.io/badge/Dash-2.17-blue?logo=plotly)
@@ -75,8 +75,8 @@ PLATEFORME_DATA/
 ### 🏦 Secteur Bancaire — Positionnement des Banques au Sénégal
 | Élément | Détail |
 |---|---|
-| **Source** | BCEAO · Base Sénégal 2015–2022 + PDF BCEAO |
-| **Données** | 24 banques · 188 enregistrements · MongoDB Atlas |
+| **Source** | BCEAO · Base Sénégal 2015–2023 + PDF BCEAO |
+| **Données** | 27 banques · 215 enregistrements · MongoDB Atlas |
 | **URL** | `/banque/` |
 | **KPIs** | Total Actif · Banques Actives · Effectif · Fonds Propres |
 | **Fonctionnalités** | Vue Marché · Comparaison · Performance · Ratios · Carte Dakar · Classement · Rapports PDF |
@@ -257,7 +257,4 @@ Mastère 2 Big Data & Data Strategy
 
 ## 📄 Licence
 
-
 Projet académique — Mastère 2 Big Data & Data Strategy · 2025–2026
-
-
